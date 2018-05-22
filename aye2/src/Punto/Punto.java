@@ -9,13 +9,12 @@ constructores y métodos para asignar valores a las coordenadas de los puntos,
 retornar el valor de cada coordenada, y sumar dos puntos, retornando su resultado.
 Definir un método booleano de igualdad entre dos puntos.
  *
- * 
  */
 
 public class Punto
 {
-	private float x;
-	private float y;
+	float x;
+	float y;
 
 	public Punto(float a, float b)
 	{
@@ -28,7 +27,7 @@ public class Punto
 		x = 0f;
 		y = 0f;
 	}
-	
+
 	public float getX() {
 		return x;
 	}
@@ -76,5 +75,6 @@ public class Punto
 	{	
 	System.out.println("El par ordenado (x,y) es: " + "(" + getX() + "," + getY() + ")" );
 	}
+
 		
 }
