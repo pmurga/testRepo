@@ -20,12 +20,49 @@ public class Punto3d extends Punto {
 		z = c;
 	}
 	
+	public Punto3d()
+	{
+		this(0f, 0f, 0f);
+	}
+	
 	public float getZ() {
 		return z;
 	}
 
 	public void setZ(float z) {
 		this.z = z;
+	}
+	
+	public boolean esIgual(Punto3d p2)
+	{
+		if (x == p2.getX())
+		{
+			if (y == p2.getY())
+			{
+				if (z == p2.getZ())
+				{
+					return true;
+				}else
+				{
+					return false;
+				}
+			}else
+			{
+				return false;
+			}
+		}else
+		{
+			return false;
+		}
+	}
+	
+	public Punto3d sumarPuntos(Punto3d p1, Punto3d p2)
+	{
+		
+		Punto3d p3 = new Punto3d(p1.getX()+p2.getX(), p1.getY()+p2.getY(),p1.getZ()+p2.getZ());
+				
+		return p3 ;
+		
 	}
 	
 	public void verCoordenadas3d()
