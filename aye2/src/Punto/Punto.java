@@ -1,6 +1,4 @@
 package Punto;
-import java.util.*;
-import java.lang.*;
 
 /**
  * 
@@ -13,8 +11,8 @@ Definir un método booleano de igualdad entre dos puntos.
 
 public class Punto
 {
-	float x;
-	float y;
+	protected float x;
+	protected float y;
 
 	public Punto(float a, float b)
 	{

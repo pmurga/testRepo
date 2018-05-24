@@ -11,12 +11,13 @@ package Punto;
 
 public class Punto3d extends Punto {
 	
-	float z;
+	private float z;
 	
 	public Punto3d(float a, float b, float c)
 	{
-		x = a;
-		y = b;
+		//x = a;
+		//y = b;
+		super(a,b);
 		z = c;
 	}
 	
@@ -42,18 +43,10 @@ public class Punto3d extends Punto {
 				if (z == p2.getZ())
 				{
 					return true;
-				}else
-				{
-					return false;
 				}
-			}else
-			{
-				return false;
 			}
-		}else
-		{
-			return false;
 		}
+		return false;
 	}
 	
 	public Punto3d sumarPuntos(Punto3d p1, Punto3d p2)

@@ -8,12 +8,9 @@ public class Fecha {
 	
 	public Fecha(int D, int M, int A) 
 	{
-		if (fechaValida(D,M,A)) 
-		{	
 			d = D;
 			m = M;
 			a = A;		
-		}
 	}	
 
 	public int getD() {
@@ -72,27 +69,20 @@ public class Fecha {
 			}
 	}
 	
-	private boolean fechaValida(int D, int M, int A)
+	public boolean fechaValida()
 	{
-		if (anioValido(A))
+		if (anioValido(this.a))
 		{
-			if (mesValido(M))
+			if (mesValido(this.m))
 			{
-				if (diaValido(D,M))
+				if (diaValido(this.d,this.m))
 				{
 					return true;
-				}else
-				{
-					return false;
 				}
-			}else
-			{
-				return false;
 			}
-		}else
-		{
-			return false;
 		}
+		
+		return false;
 	}
 	
 	private boolean anioValido(int A)
