@@ -2,9 +2,9 @@ package Fecha;
 
 public class Fecha {
 	
-	int d;
-	int m;
-	int a;
+	private int d;
+	private int m;
+	private int a;
 	
 	public Fecha(int D, int M, int A) 
 	{

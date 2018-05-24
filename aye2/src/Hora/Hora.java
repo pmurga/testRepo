@@ -18,9 +18,9 @@ en el objeto no inicializado. Por último, se pide visualizar el valor resultant
 public class Hora 
 {
 
-	Integer hr;
-	Integer min;
-	Integer seg;
+	private Integer hr;
+	private Integer min;
+	private Integer seg;
 
 	public Hora() 
 	{

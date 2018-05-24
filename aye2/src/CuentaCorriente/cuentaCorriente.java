@@ -2,9 +2,9 @@ package CuentaCorriente;
 
 public class cuentaCorriente {
 
-	float S;
-	int cantOps;
-	int extInv;
+	private float S;
+	private int cantOps;
+	private int extInv;
 	
 	public cuentaCorriente()
 	{
