@@ -48,6 +48,18 @@ public class SistemaEscuela {
 		
 		per1 = emp1; // se puede decir que ArrayList<Empleado> es subtipo de ArrayList<Persona>
 		
+		//RAW TYPES
+		ArrayList listaRaw = new ArrayList();
+		listaRaw.add(new Integer(10));
+		listaRaw.add(new String("pepe"));
+		
+		for (Object x : listaRaw)
+		{
+			System.out.println(x);
+		}
+		
+	
+		
 	}
 
 }
